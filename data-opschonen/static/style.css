@@ -1,0 +1,164 @@
+body {
+	font-family: 'poppins';
+}
+
+.text-eye-container {
+	display: flex;
+	align-items: center;
+}
+
+
+
+.eye-container {
+	text-align: center;
+	transition: .5s all;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 25%;
+	border: 1px solid black;
+}
+
+.eye-inner-container {
+	display: flex;
+}
+
+.ownEye-outer {
+	margin: 20px;
+	border: solid 1px black;
+	border-radius: 75% 15%;
+	width: 50px;
+	height: 50px;
+	transform: rotate(45deg);
+	position: relative;
+	transition: .5s all;
+}
+
+.ownEye-outer:hover {
+	transform: scale(1.3) rotate(45deg);
+}
+.ownEye-inner {
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-inner {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: black;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.toggleAnimation {
+	padding-top: 50px;
+	border-top: 2px solid black;
+}
+
+.animationMove {
+	animation: move 5s infinite;
+}
+
+.animationSqueeze {
+	animation: squeeze 5s infinite;
+}
+
+#outer-example {
+	animation: squeeze 5s infinite;
+}
+
+#example {
+	animation: move 5s infinite, colorChange 5s infinite;
+	background-color: blue;
+}
+
+@keyframes colorChange {
+	0% {
+		background: blue;
+	}
+
+	25% {
+		background: green;
+	}
+
+	50% {
+		background: #8A7444;
+	}
+
+	75% {
+		background: red;
+	}
+
+	100% {
+		background: blue;
+	}
+}
+
+
+@keyframes squeeze {
+	0% {
+		border-radius: 75% 15%;
+	}
+
+	25% {
+		border-radius: 120% 3%;
+	}
+
+	50% {
+		border-radius: 75% 15%;
+	}
+}
+
+@keyframes move {
+	0% {
+		top:50%;
+	}
+
+	25% {
+		top: 30%;
+		left: 70%;
+	}
+
+	50% {
+		top: 70%;
+		left: 55%;
+	}
+
+	75% {
+		left: 40%;
+		top: 40%;
+	}
+
+	100% {
+		top: 50%;
+		left: 50%;
+	}
+}
+
+.color-box {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	margin: 0;
+	padding: 20px;
+	transition: .3s all;
+	color: white;
+}
+
+.color-box:hover {
+	transform: scale(1.2);
+}
+
+.container-boxes, .container-eyes {
+	display: flex;
+	flex-wrap: wrap;
+}
