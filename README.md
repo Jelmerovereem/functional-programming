@@ -24,7 +24,7 @@ I'm thrilled to start working with D3.js! I've seen very very cool visualization
 ### Concept
 _For a more detailed version of the concept, visit [my wiki entry](https://github.com/Jelmerovereem/functional-programming/wiki/Concept-research-questions)._
 
-The concept/theme for this data visualization is **the car in the city**.  
+The concept/theme for this data visualization is **the best way to park your car**.  
 The stakeholders for this theme are:
 * automobilists
 * other road users (cyclists, scooter drivers, etc.)
@@ -32,7 +32,7 @@ The stakeholders for this theme are:
 * township
 * road workers
 
-**Main theme question**
+**Main theme question**  
 _What is the easiest and cheapest way to park in the city throughout the Netherlands?_
 
 I've devided this main question into 3 subquestions:
