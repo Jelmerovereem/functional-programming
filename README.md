@@ -22,7 +22,23 @@ I'm thrilled to start working with D3.js! I've seen very very cool visualization
 * Write cleaner code and as efficient as possible.
 
 ### Concept
-_Here comes my concept for the static visualization_
+_For a more detailed version of the concept, visit [my wiki entry](https://github.com/Jelmerovereem/functional-programming/wiki/Concept-research-questions)._
+
+The concept/theme for this data visualization is **the car in the city**.  
+The stakeholders for this theme are:
+* automobilists
+* other road users (cyclists, scooter drivers, etc.)
+* parking managers
+* township
+* road workers
+
+**Main theme question**
+_What is the easiest and cheapest way to park in the city throughout the Netherlands?_
+
+I've devided this main question into 3 subquestions:
+1. What payment methods are out there? [_Wiki entry_](https://github.com/Jelmerovereem/functional-programming/wiki/Concept-research-questions#1-are-the-city-parking-spots-payment-methods-more-modern-than-outside-the-city)
+2. Are parking spots with a bigger capacity more expensive? [_Wiki entry_](https://github.com/Jelmerovereem/functional-programming/wiki/Concept-research-questions#4-are-parking-spots-with-a-bigger-capacity-more-expensive-or-paid)
+3. Where is the cheapest parking spot for your car? [_Wiki entry_](https://github.com/Jelmerovereem/functional-programming/wiki/Concept-research-questions#5-where-is-the-cheapest-parking-spot-especially-for-your-car)
 
 ### Install
 _Here comes the documentation for installing my project_
