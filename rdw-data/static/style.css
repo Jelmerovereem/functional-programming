@@ -1,0 +1,11 @@
+body {
+	font-family: 'roboto';
+	display: flex;
+	flex-wrap: wrap;
+}
+
+span {
+	margin: 20px;
+	display: inline-block;
+	width: 100px;
+}
