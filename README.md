@@ -34,12 +34,21 @@ The stakeholders for this theme are:
 * road workers
 
 #### Main theme question
-_What is the easiest and cheapest way to park in the city throughout the Netherlands?_
+**Before feedback**  
+_What is the easiest and cheapest way to park in the city throughout the Netherlands?_  
+**After feedback**  
+_What is the best way to park in the city throughout the Netherlands?_
 
-I've devided this main question into 3 subquestions:
+I've devided this main question into 3 subquestions:  
+**Before feedback**  
 1. What payment methods are out there? [_Wiki entry_](https://github.com/Jelmerovereem/functional-programming/wiki/Concept-&-research-questions#1-are-the-city-parking-spots-payment-methods-more-modern-than-outside-the-city)
 2. Are parking spots with a bigger capacity more expensive? [_Wiki entry_](https://github.com/Jelmerovereem/functional-programming/wiki/Concept-&-research-questions#4-are-parking-spots-with-a-bigger-capacity-more-expensive-or-paid)
 3. Where is the cheapest parking spot for your car? [_Wiki entry_](https://github.com/Jelmerovereem/functional-programming/wiki/Concept-&-research-questions#5-where-is-the-cheapest-parking-spot-especially-for-your-car)
+
+**After feedback**  
+1. What are the cheapest parking spots?  
+2. Where are the most parking spots?  
+3. Where are the available/free parking spots?  
 
 ### Install
 _Here comes the documentation for installing my project_
