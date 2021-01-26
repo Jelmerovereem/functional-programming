@@ -6,18 +6,20 @@ function convertToHex(eyeColor) {
 	eyeColor = eyeColor.replace(".", ","); // remove all dots (for example: RGB(0.0.0) => RGB(0,0,0)) 
 	eyeColor = eyeColor.replace(" ", ""); // remove all unwanted spaces (for example: # xxx => #xxx)
 
-	eyeColor = eyeColor.toUpperCase(); // convert everything to uppercase for checks
-	if (eyeColor === "BRUIN") { // if bruin, convert to hex code brown
+	// check specific colors and assign hex code
+	eyeColor = eyeColor.toUpperCase();
+	if (eyeColor === "BRUIN") {
 		eyeColor = "#8A7444";
-	} else if (eyeColor === "BLAUW") { //if blauw, convert to hex code blauw
+	} else if (eyeColor === "BLAUW") {
 		eyeColor = "#4266f5";
-	} else if (eyeColor === "LICHTBLAUW") { // ^^
+	} else if (eyeColor === "LICHTBLAUW") {
 		eyeColor = "#61d9fa";
-	} else if (eyeColor === "GROEN") { // ^^
+	} else if (eyeColor === "GROEN") {
 		eyeColor = "#269600"
 	}
 
-	if (eyeColor[0] != "#" && eyeColor[0] != "R") { // if intend is a hex code but doesn't have # and if first letter isn't "R" for RGB(A)
+	// if intend is a hex code but doesn't have # and if first letter isn't "R" for RGB(A). => Insert #
+	if (eyeColor[0] != "#" && eyeColor[0] != "R") {
 		eyeColor = [eyeColor.slice(0, 0), "#", eyeColor.slice(0)].join("");
 	}
 
