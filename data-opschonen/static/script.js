@@ -77,10 +77,12 @@ document.querySelector(".toggleAnimation").addEventListener("click", () => {
 data.forEach((student, index) => {
 	let coordinate = student.geboorteplaats;
 
-	if (coordinate === "") { // if entry is empty
+	// if entry is empty, set default coordinate
+	if (coordinate === "") {
 		coordinate = "0.0000000, 0.0000000";
 	}
 
+	//convert the dms coordinates to the wanted(lat, long) result
 	if (coordinate.includes(`°`) && coordinate.includes(`"`)) {
 		const coordinateSplitted = coordinate.split(" ");
 		const dmsLat = coordinateSplitted[0];
@@ -109,6 +111,7 @@ data.forEach((student, index) => {
 		coordinate = `${coordinate.substring(0, 10)}, ${coordinate.substring(11)}`;
 	}
 
+	// if there's still a wrong coordinate, set it to the default
 	if (/['"°NE()a-zA-Z]/.test(coordinate)) {
 		coordinate = "0.0000000, 0.0000000";
 	}
