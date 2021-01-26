@@ -1,3 +1,4 @@
+// get the rdw data from data.js
 var data = data();
 data = data.data;
 
