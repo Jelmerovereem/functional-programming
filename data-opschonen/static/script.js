@@ -2,19 +2,19 @@
 var data = data();
 data = data.data;
 
-data.forEach((student) => {
-	student.oogKleur = student.oogKleur.replace(".", ","); // remove all dots (for example: RGB(0.0.0) => RGB(0,0,0)) 
-	student.oogKleur = student.oogKleur.replace(" ", ""); // remove all unwanted spaces (for example: # xxx => #xxx)
+function convertToHex(eyeColor) {
+	eyeColor = eyeColor.replace(".", ","); // remove all dots (for example: RGB(0.0.0) => RGB(0,0,0)) 
+	eyeColor = eyeColor.replace(" ", ""); // remove all unwanted spaces (for example: # xxx => #xxx)
 
-	student.oogKleur = student.oogKleur.toUpperCase(); // convert everything to uppercase for checks
-	if (student.oogKleur === "BRUIN") { // if bruin, convert to hex code brown
-		student.oogKleur = "#8A7444";
-	} else if (student.oogKleur === "BLAUW") { //if blauw, convert to hex code blauw
-		student.oogKleur = "#4266f5";
-	} else if (student.oogKleur === "LICHTBLAUW") { // ^^
-		student.oogKleur = "#61d9fa";
-	} else if (student.oogKleur === "GROEN") { // ^^
-		student.oogKleur = "#269600"
+	eyeColor = eyeColor.toUpperCase(); // convert everything to uppercase for checks
+	if (eyeColor === "BRUIN") { // if bruin, convert to hex code brown
+		eyeColor = "#8A7444";
+	} else if (eyeColor === "BLAUW") { //if blauw, convert to hex code blauw
+		eyeColor = "#4266f5";
+	} else if (eyeColor === "LICHTBLAUW") { // ^^
+		eyeColor = "#61d9fa";
+	} else if (eyeColor === "GROEN") { // ^^
+		eyeColor = "#269600"
 	}
 
 	if (student.oogKleur[0] != "#" && student.oogKleur[0] != "R") { // if intend is a hex code but doesn't have # and if first letter isn't "R" for RGB(A)
